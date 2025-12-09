@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>verTodo</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-[#07393C] ">
+    <div class="">
+        <ul class="flex items-center">
+        <li class="flex items-center gap-2 pl-40 ">
+            <img src="assets/logo.png" width="100" alt="logo">
+            <a href="#" class=" text-stone-50 text-2xl text py-8 hover:text-sky-400 pr-10 font-bold">AGROTECH</a></li>
+        </li>
+        <li><a href="#" class="pl-6 pr-40 py-3 border-1 rounded-lg border-white text-slate-400  p-2 ">Buscar frutas, verduras y mas </a></li>
+        <li class="flex items-center gap-2  pl-10">
+            <img src="assets/bandera.png" width="30" alt="logo">
+            <a href="#"class=" hover:border-0  text-white block   hover:text-sky-400 pr-5">Español Latinoamerica | COP </a>    
+            <img src="assets/corazon.png" width="30" alt="logo">
+            <li class="pl-5"><img src="assets/carrito.png" width="30" alt="logo"></li>
+            <a href="/perfil.html"><li class="pl-5"><img src="assets/perfil.png" width="40" alt="logo"></li></a>
+        </li>
+    </ul>
+    </div> 
+
+
+    <!-- categorias -->
+    
+        <div class="bg-[#00282B] text-white  lg:block hidden  ">
+            <ul class="menu  flex items-center justify-center gap-5">
+                <li><a href="#" class=" hover:border-0 hover:bg-black text-white block p-5 font-bold hover:text-sky-400 ">Categorias</a></li>
+                <li><a href="#"class=" hover:border-0 hover:bg-black text-white block p-5 font-bold hover:text-sky-400 ">Capacitaciones</a></li>
+                <li><a href="#"class=" hover:border-0 hover:bg-black text-white block p-5 font-bold hover:text-sky-400 ">Comprar</a></li>
+                <li><a href="#"class=" hover:border-0 hover:bg-black text-white block p-5 font-bold hover:text-sky-400 ">Vender</a></li>
+                <li><a href="#" class="border-2 border-white text-black font-bold p-2 bg-white rounded-full hover:bg-black hover:text-white">Ofertas Flash</a></li>
+                <li><a href="#"class=" hover:border-0 hover:bg-black text-white block p-5 font-bold hover:text-sky-400 ">fertilizantes</a></li>
+                <li><a href="#"class=" hover:border-0 hover:bg-black text-white block p-5 font-bold hover:text-sky-400 ">Salir</a></li>
+            </ul> 
+        </div>
+
+        <section class="header">
+            <div class="text-gray-50 text-sm italic pl-50 py-5">Tienda > Frutas y verduras"></div>
+        </section>
+
+        <section class="header">
+            <div class="text-white text-4xl italic pl-50 pb-5">¡Compra las mejores frutas y verduras!</div>
+        </section>
+
+
+        <!-- cuadro de busquedas y filtrar resultados -->
+
+    <div class="pt-5 flex justify-start">
+    <div class="ml-50 w-[230px] h-[800px] bg-[#38787E] p-4 text-white text-xl">
+        <div class="mb-2 pl-3">Precio (COP)</div>
+        <!-- cuadros -->    
+        <div class ="pl-3 pr-3 flex gap-4 mb-4">
+            <div class="w-[80px] h-[30px] bg-[#07393C] text-white rounded text-sm"></div>
+             <div class="w-[80px] h-[30px] bg-[#07393C] text-white rounded  text-sm"></div>
+        </div>
+                
+        <div class="h-[1px] bg-[#07393C] my-3 w-full"></div> <!-- linea -->
+
+        <div class="mb-2 pl-3">Ciudad</div>
+        <div class="pl-3">
+            <div class="mx- auto w-[174px] h-[30px] bg-[#07393C] text-[#BAB5B5] rounded text-sm text-center py-1">
+                Todas las ciudades</div>
+             </div>
+
+             <div class="h-[1px] bg-[#07393C] my-3 w-full"></div> <!-- linea -->
+        <div class="mb-2 pl-3 ">Categoria</div>
+        <!-- cada categoria que se puede seleccionar -->  
+        <div class ="pl-3 pr-3 flex gap-4 mb-2">
+            <div class="w-[20px] h-[20px] bg-black border-2 border-white  text-white rounded text-sm"></div>
+                <div class="text-base"> Frutas</div>
+                <div class="text-base ml-auto pr-1 "> 575</div>
+        </div>
+        <div class ="pl-3 pr-3 flex gap-4 mb-2">
+            <div class="w-[20px] h-[20px] bg-black border-2 border-white  text-white rounded text-sm"></div>
+                <div class="text-base"> Verduras</div>
+                <div class="text-base ml-auto pr-1 "> 732</div>
+        </div>
+                <div class ="pl-3 pr-3 flex gap-4 mb-2 ">
+            <div class="w-[20px] h-[20px]  border-2 border-white  text-white rounded text-sm"></div>
+                <div class="text-base"> Hortalizas</div>
+                <div class="text-base ml-auto pr-1 "> 220</div>
+        </div>
+                <div class ="pl-3 pr-3 flex gap-4 mb-2">
+            <div class="w-[20px] h-[20px]  border-2 border-white  text-white rounded text-sm"></div>
+                <div class="text-base"> Granos</div>
+                <div class="text-base ml-auto pr-1 "> 121</div>
+        </div>
+                <div class ="pl-3 pr-3 flex gap-4 mb-2">
+            <div class="w-[20px] h-[20px]  border-2 border-white  text-white rounded text-sm"></div>
+                <div class="text-base"> Tuberculos</div>
+                <div class="text-base ml-auto pr-1 "> 39</div>
+        </div>
+                <div class ="pl-3 pr-3 flex gap-4 mb-2">
+            <div class="w-[20px] h-[20px]  border-2 border-white  text-white rounded text-sm"></div>
+                <div class="text-base"> Legumbres</div>
+                <div class="text-base ml-auto pr-1 "> 110</div>
+        </div>
+                <div class ="pl-3 pr-3 flex gap-4 mb-2">
+            <div class="w-[20px] h-[20px]  border-2 border-white  text-white rounded text-sm"></div>
+                <div class="text-base"> Frutos secos</div>
+                <div class="text-base ml-auto pr-1 "> 10</div>
+        </div>
+                <div class ="pl-3 pr-3 flex gap-4 mb-2">
+            <div class="w-[20px] h-[20px]  border-2 border-white  text-white rounded text-sm"></div>
+                <div class="text-base"> Capacitaciones</div>
+                <div class="text-base ml-auto pr-1 "> 4</div>
+        </div>
+        
+    </div>
+    </div>
+
+
+
+
+    
+</body>
+</html>
