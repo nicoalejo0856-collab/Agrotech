@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descripción del Producto</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> <!-- Tu CDN original -->
+</head>
+
+<body class="bg-slate-950 text-white min-h-screen">
+    <!-- Header similar a Eneba  -->
+    <header class="bg-slate-900 border-b border-slate-700 p-4 flex justify-between items-center">
+        <div class="flex items-center space-x-4">
+            <img src="assets/logo-Photoroom.png" alt="Logo Tienda" class="h-8 w-auto"> <!-- Agrega tu logo en assets/ -->
+            <h1 class="text-xl font-bold text-cyan-400">AGROTECH</h1>
+        </div>
+        <nav class="hidden md:flex space-x-6">
+            <a href="#" class="text-gray-300 hover:text-white">Inicio</a>
+            <a href="#" class="text-gray-300 hover:text-white">Productos</a>
+            <a href="#" class="text-gray-300 hover:text-white">Capacitaciones</a>
+            <a href="#" class="text-gray-300 hover:text-white">Carrito</a>
+        </nav>
+        <div class="flex items-center space-x-4">
+            <input type="search" placeholder="Buscar productos..." class="bg-slate-800 text-white px-4 py-2 rounded-md w-64">
+            
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8 max-w-7xl">
+        <!-- Sección principal: Imagen + Detalles  -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+            <!-- Imagen del producto (grande, como en Eneba) -->
+            <div class="bg-slate-800 rounded-lg overflow-hidden shadow-lg">
+                <img src="assets/papa.png" alt="Papa Patusa" class="w-full h-96 lg:h-[500px] object-cover">
+                <!-- Badges en imagen -->
+                
+            </div>
+
+            <!-- Detalles del producto -->
+            <div class="space-y-6 lg:pl-8">
+                <!-- Título y precio destacado -->
+                <div>
+                    <h1 class="text-3xl lg:text-4xl font-bold text-white mb-2">Papa Pastusa - 1 Kg </h1>
+                    <p class="text-gray-400 mb-4">Papa Pastusa fresca y de calidad.</p>
+                    
+                    <!-- Precio con descuento  -->
+                    <div class="flex items-center space-x-4 mb-4">
+                        <span class="text-4xl font-bold text-green-400">$1.750</span>
+                        <span class="text-xl text-gray-500 line-through">$2.500</span>
+                        <span class="bg-red-600 text-xs px-2 py-1 rounded">30% OFF</span>
+                    </div>
+                    
+                    <!-- Stock y entrega -->
+                    <div class="text-sm text-gray-400 space-y-1">
+                        <p>Envío: se realiza en 24 horas</p>
+                        <p>Disponible: 1,000 unidades</p>
+                        <p>Región: Sibate - Bogotá</p>
+                    </div>
+                </div>
+
+                <!-- Botón de compra principal  -->
+                <button class="w-full bg-gradient-to-r from-cyan-600 to-cyan-800 hover:from-cyan-700 hover:to-cyan-900 text-white font-bold py-4 px-6 rounded-lg text-xl shadow-lg transition duration-300 flex items-center justify-center space-x-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-1.5 1.5M7 13l-1.5-1.5M12 13v6m0 0h-3m3 0h3"></path></svg>
+                      Añadir al Carrito - $1.750
+                </button>
+
+                <!-- Opciones de vendedores  -->
+                <div class="bg-slate-800 p-4 rounded-lg">
+                    <h3 class="text-lg font-semibold mb-3">Ofertas del Vendedor</h3>
+                    <div class="space-y-2">
+                        <div class="flex justify-between items-center text-sm">
+                            <span>2kg de fresas</span>
+                            <span class="text-green-400">$2.500 (Hasta agotar existencias)</span>
+                        </div>
+                        <div class="flex justify-between items-center text-sm">
+                            <span>Papa Pastusa por libra</span>
+                            <span class="text-green-400">$600 (Max 5 unidades)</span>
+                        </div>
+                        <button class="w-full mt-2 text-xs text-cyan-400 hover:underline">Ver Mas Ofertas</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de descripción y specs -->
+        <div class="mt-12 space-y-8">
+            <!-- Descripción -->
+            <div class="bg-slate-800 p-6 rounded-lg">
+                <h2 class="text-2xl font-bold mb-4">Descripción</h2>
+                <p class="text-gray-300 leading-relaxed">
+                  Papa Pastusa de Sibaté Fresca y de la mejor calidad
+                  Disfruta el auténtico sabor de la papa pastusa cultivada en las tierras frías de Sibaté, reconocidas por su fertilidad y tradición agrícola. Su textura harinosa, ideal para sopas, purés y acompañamientos, garantiza un sabor inigualable en cada preparación.
+                  Lleva a tu mesa la calidad del campo colombiano con la papa pastusa de Sibaté: nutritiva, deliciosa y al mejor precio.
+               </p>
+            </div>
+
+            <!-- Detalles del Producto -->
+            <div class="bg-slate-800 p-6 rounded-lg">
+                <h2 class="text-2xl font-bold mb-4">Detalles del Producto</h2>
+                <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-300">
+                    <li>• Origen: Sibaté, Cundinamarca</li>
+                    <li>• Cultivo 100% natural, sin químicos dañinos</li>
+                    <li>• Papa seleccionada, fresca y de gran tamaño</li>
+                    <li>• Perfecta para ajiacos, sancochos, cremas y más</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Productos relacionados  -->
+        <section class="mt-16">
+            <h2 class="text-2xl font-bold mb-6 text-center">Productos Relacionados</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+
+                <!-- Producto relacionado 1 -->
+                <div class="bg-slate-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
+                    <img src="assets/Fresas.png" alt="FIFA 24" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-semibold mb-2">Fresas Frescas</h3>
+                        <p class="text-green-400 font-bold">$3.000</p>
+                        <button class="w-full mt-2 bg-cyan-600 hover:bg-cyan-700 text-white py-2 rounded">Añadir</button>
+                    </div>
+                </div>
+
+                <!-- Producto relacionado 2 -->
+                <div class="bg-slate-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
+                    <img src="assets/lulo-kilo.jpg" alt="Call of Duty" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-semibold mb-2">Lulo por kg </h3>
+                        <p class="text-green-400 font-bold">$2.300</p>
+                        <button class="w-full mt-2 bg-cyan-600 hover:bg-cyan-700 text-white py-2 rounded">Añadir</button>
+                    </div>
+                </div>
+
+                <!-- Producto relacionado 3 -->
+                <div class="bg-slate-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
+                    <img src="assets/cilantro.png" alt="Game Pass 3 Meses" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-semibold mb-2">Manojo de cilantro</h3>
+                        <p class="text-green-400 font-bold">$700</p>
+                        <button class="w-full mt-2 bg-cyan-600 hover:bg-cyan-700 text-white py-2 rounded">Añadir</button>
+                    </div>
+                </div>
+
+                <!-- Producto relacionado 4 -->
+                <div class="bg-slate-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
+                    <img src="assets/cebolla.png" alt="Fortnite" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-semibold mb-2">Manojo de cebolla larga</h3>
+                        <p class="text-green-400 font-bold">$900</p>
+                        <button class="w-full mt-2 bg-cyan-600 hover:bg-cyan-700 text-white py-2 rounded">Añadir</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
+    <footer class="bg-slate-900 p-6 mt-12 border-t border-slate-700 text-center">
+        <p class="text-gray-400">&copy; 2025 Grupo Agrotech. Todos los derechos reservados. | Soporte: support.agrotech@agrotech.com</p>
+    </footer>
+</body>
+
+</html>
